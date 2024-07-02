@@ -1,13 +1,11 @@
 import { NgModule  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; // Importa FormsModule
-//import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import { ProductComponent } from './product/product.component';
 import { BannerComponent } from './banner/banner.component';
 import { FilterComponent } from './filter/filter.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-//import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 
 
@@ -20,9 +18,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductDetailComponent
   ],
   imports: [
-    //SlickCarouselModule,
     CommonModule,
-    //IvyCarouselModule,
     FormsModule
 
   ],
