@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding: 10px;
 
   .logo {
     display: flex;
@@ -56,6 +57,8 @@
         color: white;
         font-size: 10px;
         z-index: 100;
+        margin:0;
+        padding:0;
       }
     }
 
@@ -75,6 +78,7 @@
     color: #328bbf;
     ;
     font-family: RobotoCondensed-Bold;
+    padding: 10px;
 
   }
 }
@@ -87,6 +91,7 @@
   h1 {
     color: #cdcda4;
     font-family: RobotoCondensed-Bold;
+    padding:10px
   }
 
   .grid {

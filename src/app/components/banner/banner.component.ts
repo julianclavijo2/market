@@ -14,10 +14,12 @@ export class BannerComponent implements OnInit {
   @Input() images:Image[] = [];
 
   constructor(
-  ) { }
+  ) { 
+    console.log(this.images)
+  }
 
   ngOnInit(): void {
-
+    console.log(this.images)
 }
 
 

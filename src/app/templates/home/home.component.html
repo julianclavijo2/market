@@ -15,7 +15,7 @@
 
 <div class="banner-section">
   <h1>Popular</h1>
-  <app-banner class="section-one" [images]="imagesBanner"></app-banner>
+  <app-banner *ngIf="imagesBanner.length > 0" class="section-one" [images]="imagesBanner"></app-banner>
 </div>
 
 <div class="filter-section" *ngIf="categories.length > 0">
