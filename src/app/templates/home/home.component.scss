@@ -126,6 +126,9 @@
   top: 0;
   left: 0;
   z-index: 1000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .content {
     background-color: white;
@@ -133,8 +136,6 @@
     height: auto;
     border-radius: 5px;
     position: absolute;
-    left: calc(50% - 200px);
-    top: calc(50% - 200px);
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -149,6 +150,7 @@
       width: 100%;
       position: absolute;
       top: calc(50% - 235px);
+      
       }
 
     .close {
@@ -164,10 +166,9 @@
       }
 
       @media (max-width: 575.98px) {
-
-      position: relative;
-      right: 20px;
-      top: 20px;
+        position: absolute;
+        top: 16px;
+        left: 90%;
         }
 
 
@@ -199,6 +200,8 @@
         overflow: hidden;
         display: flex;
         overflow-y: scroll;
+      }
+
       }
 
       p {
@@ -242,9 +245,10 @@
       @media (max-width: 575.98px) {
         display: flex;
         justify-content: center;
+        left: 75%;
         }
 
 
     }
   }
-}
+
