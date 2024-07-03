@@ -1,6 +1,5 @@
 .container-product {
-
-  height: 500.59px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +37,7 @@
   .options {
 
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     padding: 10px;
 

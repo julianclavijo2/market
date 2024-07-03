@@ -34,6 +34,7 @@
         font-family: RobotoCondensed-Bold;
         font-size: 15px;
         color: #d70000;
+   
       }
     }
   }
@@ -129,7 +130,7 @@
   .content {
     background-color: white;
     width: 400px;
-    height: 400px;
+    height: auto;
     border-radius: 5px;
     position: absolute;
     left: calc(50% - 200px);
@@ -151,11 +152,9 @@
       }
 
     .close {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: end;
+      position: absolute;
+      top: 16px;
+      left: 90%;
 
       img {
         width: 15px !important;
@@ -187,15 +186,25 @@
     .txt {
       h2 {
         font-family: RobotoCondensed-Bold !important;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
 
       small {
         font-family: RobotoCondensed-Light;
+        width: 340px;
+        height: 160px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        overflow-y: scroll;
       }
 
       p {
         font-family: RobotoCondensed-Regular;
         font-size: 20px;
+        margin-top: 22px;
       }
 
       @media (max-width: 575.98px) {
@@ -207,6 +216,9 @@
     }
 
     .options {
+      position: absolute;
+      bottom: 48px;
+      left: 87%;
       button {
         border: none;
         background-color: white;

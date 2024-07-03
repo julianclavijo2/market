@@ -1,12 +1,15 @@
 {
   "name": "market",
   "version": "0.0.0",
+  "homepage":"https://julianclavijo2.github.io/market/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy":"npm run build && gh-pages -d dist/market"
+
   },
   "private": true,
   "dependencies": {
