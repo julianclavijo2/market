@@ -34,7 +34,7 @@
         font-family: RobotoCondensed-Bold;
         font-size: 15px;
         color: #d70000;
-   
+
       }
     }
   }
@@ -58,8 +58,8 @@
         color: white;
         font-size: 10px;
         z-index: 100;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
       }
     }
 
@@ -84,15 +84,13 @@
   }
 }
 
-.filter-section {
-
-}
+.filter-section {}
 
 .products-section {
   h1 {
     color: #cdcda4;
     font-family: RobotoCondensed-Bold;
-    padding:10px
+    padding: 10px
   }
 
   .grid {
@@ -106,9 +104,9 @@
       &:hover {
         transition: all 1s ease;
         transform: scale(1.01);
-        -webkit-box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px -1px 5px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px -1px 5px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px -1px 5px -1px rgba(0, 0, 0, 0.75);
         cursor: pointer;
       }
     }
@@ -143,6 +141,7 @@
     -webkit-box-shadow: -1px 4px 18px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 4px 18px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 4px 18px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
 
     @media (max-width: 575.98px) {
       height: 470px;
@@ -150,8 +149,8 @@
       width: 100%;
       position: absolute;
       top: calc(50% - 235px);
-      
-      }
+
+    }
 
     .close {
       position: absolute;
@@ -169,7 +168,9 @@
         position: absolute;
         top: 16px;
         left: 90%;
-        }
+      }
+
+
 
 
 
@@ -202,53 +203,102 @@
         overflow-y: scroll;
       }
 
-      }
-
-      p {
-        font-family: RobotoCondensed-Regular;
-        font-size: 20px;
-        margin-top: 22px;
-      }
-
-      @media (max-width: 575.98px) {
-        padding: 30px;
-        }
-
-
-
     }
 
-    .options {
-      position: absolute;
-      bottom: 48px;
-      left: 87%;
-      button {
-        border: none;
-        background-color: white;
-        cursor: pointer;
-
-        img {
-          width: 25px !important;
-          height: auto !important;
-          @media (max-width: 575.98px) {
-            width: 50px !important;
-          height: auto !important;
-            }
-        }
-
-        &:hover {
-          transition: all 1s ease;
-          transform: scale(1.09);
-        }
-      }
-
-      @media (max-width: 575.98px) {
-        display: flex;
-        justify-content: center;
-        left: 75%;
-        }
-
-
+    p {
+      font-family: RobotoCondensed-Regular;
+      font-size: 20px;
+      margin-top: 22px;
     }
+
+    @media (max-width: 575.98px) {
+      padding: 30px;
+    }
+
+
+
   }
 
+  .options {
+    position: absolute;
+    bottom: 48px;
+    left: 87%;
+
+    button {
+      border: none;
+      background-color: white;
+      cursor: pointer;
+
+      img {
+        width: 25px !important;
+        height: auto !important;
+
+        @media (max-width: 575.98px) {
+          width: 50px !important;
+          height: auto !important;
+        }
+      }
+
+      &:hover {
+        transition: all 1s ease;
+        transform: scale(1.09);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      display: flex;
+      justify-content: center;
+      left: 75%;
+    }
+
+
+  }
+
+  .msgConfirm {
+    width: 30%;
+    height: 36px;
+    position: absolute;
+    top: 1px;
+    background: #00d493;
+    border-radius: 23px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease 1s;
+    transform: translate(312%, 0px);
+    opacity: 0;
+    h3 {
+      font-size: 13px;
+      color: white;
+      margin: 0;
+    }
+    
+  
+  }
+}
+
+.animateTranslate {
+  width: 30%;
+  height: 36px;
+  position: absolute;
+  top: 2%;
+  background: #00d493;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.5s;
+  transform: translate(205%, 0px);
+  opacity: 1;
+  padding: 3px;
+  
+  h3 {
+    font-size: 13px;
+    color: white;
+    margin: 0;
+  }
+}

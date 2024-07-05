@@ -33,6 +33,8 @@ export class HomeComponent implements OnInit {
   public selectedProductsArray: Product[] = []
   public categories: Category[] = [];
 
+  public isAdded:boolean = false;
+
   constructor(
     private service: ProductService,
     private router: Router
@@ -87,6 +89,11 @@ export class HomeComponent implements OnInit {
 
   addCar = (product: Product) => {
     this.selectedProductsArray.push(product);
+    this.isAdded = true;
+    setTimeout(() => {
+      this.isAdded = false;
+    }, 3000);
+  
 
   }
 

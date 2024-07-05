@@ -33,7 +33,10 @@
 
 
 <div class="popUp" *ngIf="showDetail">
-  <div class="content">
+  <div class="content" >
+    <div [ngClass]="isAdded ? 'animateTranslate' : 'msgConfirm'">
+      <h3>Added Successful !</h3>
+    </div>
     <div class="close">
       <img [src]="images.close" alt="" (click)="showDetail = false">
     </div>
